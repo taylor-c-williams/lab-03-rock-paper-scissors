@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+const selectedInputEl = document.querySelector('input:checked');
 
 // initialize global state
 
