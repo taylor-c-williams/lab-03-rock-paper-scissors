@@ -39,6 +39,7 @@
 
 
 6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?
+    - compares user input to random number (selection)
     - Wins/Losses/Draws
 
 7) Think about how to validate each of your steps
