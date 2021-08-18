@@ -1,14 +1,8 @@
 export function getRandomThrow(){
    
     let randomNumber = Math.round(Math.random() * 2);
+    const sideArray = ['rock','paper', 'scissors']
+    console.log (sideArray[randomNumber])
 
-    if (randomNumber === 2) {
-        return 'scissors';
-    } 
-     if (randomNumber === 1) {
-        return 'paper';
-    } 
-    if (randomNumber === 0) {
-       return 'rock';     
-    }
 }
+

@@ -1,5 +1,4 @@
 // import functions and grab DOM elements
-const selectedInputEl = document.querySelector('input:checked');
 const playButton = document.querySelector('#play-button');
 const resultsDisplay = document.querySelector('#results-display');
 const winsDisplay = document.querySelector('#wins');
@@ -15,7 +14,9 @@ let ties = 0;
 
 // set event listeners 
 playButton.addEventListener('click', () =>{
-   console.log(getRandomThrow());
+getRandomThrow()
+const selectedInputEl = document.querySelector('input:checked');
+console.log(selectedInputEl.value);
 
    
 });
