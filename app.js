@@ -12,21 +12,12 @@ let wins = 0;
 let losses = 0;
 let ties = 0;
 
+
 // set event listeners 
 playButton.addEventListener('click', () =>{
-   getRandomThrow();
-    // let randomNumber = Math.round(Math.random() * 2);
-    // if (randomNumber === 2 ) {
-    //     console.log('two');
-    // } else if (randomNumber === 0) {
-    //     console.log('zero');
-    // } else if (randomNumber === 1) {
-    //     console.log('one'); 
-        
-    // }
+   console.log(getRandomThrow());
 
-    // console.log(randomNumber);  
-    
+   
 });
 
 

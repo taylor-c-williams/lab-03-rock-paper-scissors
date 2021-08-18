@@ -42,9 +42,9 @@
     - compares user input to random number (selection)
     - Wins/Losses/Draws
 
--1 = rock
-0 = paper
-1 = scissors
+0 = rock
+1 = paper
+2 = scissors
 
 7) Think about how to validate each of your steps
 console log
