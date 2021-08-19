@@ -5,6 +5,9 @@ const winsDisplay = document.querySelector('#wins');
 const lossesDisplay = document.querySelector('#losses');
 const tiesDisplay = document.querySelector('#ties');
 
+
+
+
 import { didUserWin, getRandomThrow } from './get-random-throw.js';
 // initialize global state
 let wins = 0;
@@ -16,12 +19,13 @@ let ties = 0;
 playButton.addEventListener('click', () =>{
     const computerThrow = getRandomThrow();
     const selectedInputEl = document.querySelector('input:checked');
+    const throwDisplay = document.querySelector('#throw-display');
+
     
     console.log(selectedInputEl.value);
     console.log (computerThrow);
    
     let result = didUserWin(selectedInputEl.value, computerThrow);
-    // console.log((didUserWin(selectedInputEl.value, computerThrow)));
     console.log(result);
 
     if (result === 'draw') {
@@ -31,6 +35,8 @@ playButton.addEventListener('click', () =>{
     } else if (result === 'computer') {
         losses++;
     }
+
+    throwDisplay.textContent = (computerThrow);
     winsDisplay.textContent = (wins);
     lossesDisplay.textContent = (losses);
     tiesDisplay.textContent = (ties);
