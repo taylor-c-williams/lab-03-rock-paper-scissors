@@ -40,9 +40,9 @@ playButton.addEventListener('click', () =>{
 
 resetButton.addEventListener('click', () =>{
     resets++;
-    let wins = 0;
-    let losses = 0;
-    let ties = 0;
+    wins = 0;
+    losses = 0;
+    ties = 0;
     throwDisplay.textContent = '';
     winsDisplay.textContent = '0';
     lossesDisplay.textContent = '0';
