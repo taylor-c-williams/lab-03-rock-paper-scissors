@@ -16,11 +16,24 @@ let ties = 0;
 playButton.addEventListener('click', () =>{
     const computerThrow = getRandomThrow();
     const selectedInputEl = document.querySelector('input:checked');
+    
     console.log(selectedInputEl.value);
     console.log (computerThrow);
    
-    didUserWin(selectedInputEl, computerThrow);
-    console.log((didUserWin(selectedInputEl.value, computerThrow)));
+    let result = didUserWin(selectedInputEl.value, computerThrow);
+    // console.log((didUserWin(selectedInputEl.value, computerThrow)));
+    console.log(result);
+
+    if (result === 'draw') {
+        ties++;
+    } else if (result === 'player') {
+        wins++;
+    } else if (result === 'computer') {
+        losses++;
+    }
+    winsDisplay.textContent = (wins);
+    lossesDisplay.textContent = (losses);
+    tiesDisplay.textContent = (ties);
 });
 
 
