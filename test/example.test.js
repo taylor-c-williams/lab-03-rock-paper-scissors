@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { didUserWin, getRandomThrow } from '../get-random-throw.js'
+import { didUserWin, getRandomThrow } from '../get-random-throw.js';
 
 const test = QUnit.test;
 
@@ -12,7 +12,7 @@ test('player rock vs computer rock', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('rock','rock');
+    const actual = didUserWin('rock', 'rock');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -27,7 +27,7 @@ test('player rock vs computer paper', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('rock','paper');
+    const actual = didUserWin('rock', 'paper');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -42,7 +42,7 @@ test('player rock vs computer scissors', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('rock','scissors');
+    const actual = didUserWin('rock', 'scissors');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -59,7 +59,7 @@ test('player paper vs computer rock', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('paper','rock');
+    const actual = didUserWin('paper', 'rock');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -74,7 +74,7 @@ test('player paper vs computer paper', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('paper','paper');
+    const actual = didUserWin('paper', 'paper');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -89,7 +89,7 @@ test('player paper vs computer scissors', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('paper','scissors');
+    const actual = didUserWin('paper', 'scissors');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -106,7 +106,7 @@ test('player scissors vs computer rock', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('scissors','rock');
+    const actual = didUserWin('scissors', 'rock');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -121,7 +121,7 @@ test('player scissors vs computer paper', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('scissors','paper');
+    const actual = didUserWin('scissors', 'paper');
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -136,7 +136,7 @@ test('player scissors vs computer scissors', (expect) => {
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = didUserWin('scissors','scissors');
+    const actual = didUserWin('scissors', 'scissors');
 
     //Expect
     // Make assertions about what is expected versus the actual result

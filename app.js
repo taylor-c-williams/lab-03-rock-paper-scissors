@@ -2,7 +2,6 @@
 const playButton = document.querySelector('#play-button');
 const resetButton = document.querySelector('#reset-button');
 
-const resultsDisplay = document.querySelector('#results-display');
 const winsDisplay = document.querySelector('#wins');
 const lossesDisplay = document.querySelector('#losses');
 const tiesDisplay = document.querySelector('#ties');
@@ -40,13 +39,13 @@ playButton.addEventListener('click', () =>{
 });
 
 resetButton.addEventListener('click', () =>{
-  resets++;
-  let wins = 0;
-  let losses = 0;
-  let ties = 0;
-  throwDisplay.textContent = '';
-  winsDisplay.textContent = '0';
-  lossesDisplay.textContent = '0';
-  tiesDisplay.textContent = '0';
-  resetsDisplay.textContent = resets;
+    resets++;
+    let wins = 0;
+    let losses = 0;
+    let ties = 0;
+    throwDisplay.textContent = '';
+    winsDisplay.textContent = '0';
+    lossesDisplay.textContent = '0';
+    tiesDisplay.textContent = '0';
+    resetsDisplay.textContent = resets;
 });
