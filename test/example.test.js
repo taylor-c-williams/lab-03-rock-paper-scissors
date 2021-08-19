@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { didUserWin } from '../get-random-throw.js'
+import { didUserWin, getRandomThrow } from '../get-random-throw.js'
 
 const test = QUnit.test;
 
@@ -143,3 +143,19 @@ test('player scissors vs computer scissors', (expect) => {
     expect.equal(actual, expected);
 });
 
+//===
+
+// test('get random throw', (expect) => {
+//     //Arrange
+//     // Set up your arguments and expectations
+    
+//     const expected = ;
+    
+//     //Act 
+//     // Call the function you're testing and set the result to a const
+//     const actual = getRandomThrow();
+
+//     //Expect
+//     // Make assertions about what is expected versus the actual result
+//     expect.equal(actual, expected);
+// });

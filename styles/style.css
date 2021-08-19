@@ -27,8 +27,25 @@ main {
 section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin:20px;
-  
 }
 
+.win-loss-zone{
+    display: block;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type:circle;
+}
+
+button{
+    background-color: white;
+    border:1px dotted;
+    font-family: 'Space Mono', monospace;
+}
 

@@ -17,7 +17,13 @@
 <body>
 
     <header>Rock Paper Scissors!</header>
-    <div class="rules">This is how to play rock, paper scissors.</div>
+    <div class="rules">
+        <ul>
+            <li>Rock beats Scissors</li>
+            <li>Paper beats Rock</li>
+            <li>Scissors beat Paper</li>
+        </ul>
+    </div>
     <main>
 
         <section class="button-zone">
@@ -25,7 +31,8 @@
                 <input type="radio" name ="game" value = "rock" / > Rock
                 <input type="radio" name ="game" value = "paper" / > Paper
                 <input type="radio" name ="game" value = "scissors" / > Scissors
-                <button id="play-button">Play!</button>
+                <button id="play-button">Rochambeau!</button>
+                <button id="reset-button">Reset!</button>
             </label>
         </section>
 
@@ -35,9 +42,10 @@
         </section>
 
         <section class = "win-loss-zone">
-           Wins! <span id="wins"></span>
-            Losses!<span id="losses"></span>
-            Ties!<span id="ties"></span>
+           <p>Wins! =  <span id="wins">0</span></p>
+           <p>Losses! = <span id="losses">0</span></p>
+            <p>Ties! = <span id="ties">0</span></p>
+            Resets: <span id="resets-display"></span>
         </section>
         
     </main>

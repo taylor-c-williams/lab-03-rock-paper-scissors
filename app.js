@@ -1,18 +1,21 @@
 // import functions and grab DOM elements
 const playButton = document.querySelector('#play-button');
+const resetButton = document.querySelector('#reset-button');
+
 const resultsDisplay = document.querySelector('#results-display');
 const winsDisplay = document.querySelector('#wins');
 const lossesDisplay = document.querySelector('#losses');
 const tiesDisplay = document.querySelector('#ties');
-
-
-
+const throwDisplay = document.querySelector('#throw-display');
+const resetsDisplay = document.querySelector('#resets-display');
 
 import { didUserWin, getRandomThrow } from './get-random-throw.js';
+
 // initialize global state
 let wins = 0;
 let losses = 0;
 let ties = 0;
+let resets = 0;
 
 
 // set event listeners 
@@ -20,13 +23,7 @@ playButton.addEventListener('click', () =>{
     const computerThrow = getRandomThrow();
     const selectedInputEl = document.querySelector('input:checked');
     const throwDisplay = document.querySelector('#throw-display');
-
-    
-    console.log(selectedInputEl.value);
-    console.log (computerThrow);
-   
     let result = didUserWin(selectedInputEl.value, computerThrow);
-    console.log(result);
 
     if (result === 'draw') {
         ties++;
@@ -42,7 +39,14 @@ playButton.addEventListener('click', () =>{
     tiesDisplay.textContent = (ties);
 });
 
-
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+resetButton.addEventListener('click', () =>{
+  resets++;
+  let wins = 0;
+  let losses = 0;
+  let ties = 0;
+  throwDisplay.textContent = '';
+  winsDisplay.textContent = '0';
+  lossesDisplay.textContent = '0';
+  tiesDisplay.textContent = '0';
+  resetsDisplay.textContent = resets;
+});
