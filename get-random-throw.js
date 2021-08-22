@@ -13,13 +13,13 @@ export function didUserWin(player, computer) {
         return 'player';
     } else if (player === 'paper' && computer === 'rock') {
         return 'player';
-    } else if (player === 'paper' &&  computer === 'paper') {
+    } else if (player === 'paper' && computer === 'paper') {
         return 'draw';
     } else if (player === 'paper' && computer === 'scissors') {
         return 'computer';
     } else if (player === 'scissors' && computer === 'rock') {
         return 'computer';
-    } else if (player === 'scissors' &&  computer === 'paper') {
+    } else if (player === 'scissors' && computer === 'paper') {
         return 'player';
     } else if (player === 'scissors' && computer === 'scissors') {
         return 'draw';
